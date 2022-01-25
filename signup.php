@@ -20,6 +20,7 @@
         
             <button type="submit" class="smBox1" name="validate" class="bigTitle1" >S'inscrire</button>
             <br>
+            
             <br>
             <a href="login.php" class="bigTitle1"><p>J'ai déjà un compte, je me connecte</p></a>
         </div>

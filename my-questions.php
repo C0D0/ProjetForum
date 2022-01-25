@@ -10,9 +10,9 @@
 
     <br><br>
     <div class="container">
-
+    <p class="bigTitle">Mes questions:</p><br><br><br>
         <?php 
-
+            
             while($question = $getAllMyQuestions->fetch()){
                 ?>
                 <div class="darkBox">

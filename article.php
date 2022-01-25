@@ -8,8 +8,7 @@
 <html lang="en">
 <?php include 'includes/head.php'; ?>
 <body>
-    
-    <?php include 'includes/navbar.php'; ?>
+   
     <br><br>
 
     <div class="container">
@@ -22,11 +21,19 @@
             if(isset($question_publication_date)){
                 ?>
                 <section class="show-content">
-                    <h3><?= $question_title; ?></h3>
-                    <hr>
+                <div class="darkBox">
+                    <div class="smBox">
+                    <p><?= $question_title; ?></p>
+                    
+                    
+                    <div class="smBox">
                     <p><?= $question_content; ?></p>
-                    <hr>
+                    
+                    
+                    <div class="smBox">
                     <small><?= '<a href="profile.php?id='.$question_id_author.'">'.$question_pseudo_author . '</a> ' . $question_publication_date; ?></small>
+                    
+                </div>
                 </section>
                 <br>
                 <section class="show-answers">
@@ -43,7 +50,8 @@
                     <?php 
                         while($answer = $getAllAnswersOfThisQuestion->fetch()){
                             ?>
-                            <div class="card">
+                            <div class="darkBox">
+                            <div class="smBox">
                                 <div class="card-header">
                                     <a href="profile.php?id=<?= $answer['id_auteur']; ?>">
                                         <?= $answer['pseudo_auteur']; ?>
@@ -52,6 +60,7 @@
                                 <div class="card-body">
                                     <?= $answer['contenu']; ?>
                                 </div>
+                            </div>
                             </div>
                             <br>
                             <?php

@@ -29,7 +29,7 @@
             <input type="text" class="smBox" name="title" placeholder="Titre de la question">
             <textarea class="smBox" name="description" placeholder="Description de la question"></textarea>
             <textarea type="text" class="smBox" name="content" placeholder="Contenu de la question"></textarea>
-            <button type="submit" class="active" name="validate">Publier la question</button>
+            <button type="submit" class="smBox1" name="validate">Publier la question</button>
    </form>
    </div>
 </body>

@@ -22,7 +22,7 @@
                     <input type="text" class="smBox" name="title" value="<?= $question_title; ?>">
                     <textarea class="smBox" name="description"><?= $question_description; ?></textarea>
                     <textarea type="text" class="smBox" name="content"><?= $question_content; ?></textarea>
-                    <button type="submit" class="active" name="validate">Publier la question</button>
+                    <button type="submit" class="smBox1" name="validate">Publier la question</button>
                 </form>
                 <?php
             }

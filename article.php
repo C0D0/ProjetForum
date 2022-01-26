@@ -35,15 +35,14 @@
                     
                 </div>
                 </section>
-                <br>
+                
                 <section class="show-answers">
 
                     <form class="form-group" method="POST">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Réponse :</label>
-                            <textarea name="answer" class="form-control"></textarea>
+                        <div class="darkBox">
+                            <textarea name="answer" class="smBox" placeholder="Réponse"></textarea>
                             <br>
-                            <button class="btn btn-primary" type="submit" name="validate">Répondre</button>
+                            <button class="smBox1" type="submit" name="validate">Répondre</button>
                         </div>
                     </form>
 
@@ -62,7 +61,7 @@
                                 </div>
                             </div>
                             </div>
-                            <br>
+                            
                             <?php
                         }
                     ?>

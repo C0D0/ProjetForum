@@ -1,11 +1,11 @@
 <?php
-    require('actions/users/securityAction.php');
-    require('actions/questions/getInfosOfEditedQuestionAction.php');
-    require('actions/questions/editQuestionAction.php');
+    require('../controleurs/users/c_security.php');
+    require('../controleurs/questions/c_infos-questions-modifier.php');
+    require('../controleurs/questions/c_modifier-question.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'includes/head.php'; ?>
+<?php include '../assets/includes/head.php'; ?>
 <body>
     
 

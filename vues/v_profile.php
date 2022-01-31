@@ -1,10 +1,10 @@
 <?php 
     session_start(); 
-    require('actions/users/showOneUsersProfileAction.php');   
+    require('../controleurs/users/c_montrer-profile-utilisateur.php');   
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'includes/head.php'; ?>
+<?php include '../assets/includes/head.php'; ?>
 <body>
     
     <br><br>

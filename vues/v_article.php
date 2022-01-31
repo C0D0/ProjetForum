@@ -1,12 +1,12 @@
 <?php 
     session_start();
-    require('actions/questions/showArticleContentAction.php'); 
-    require('actions/questions/postAnswerAction.php');
-    require('actions/questions/showAllAnswersOfQuestionAction.php');
+    require('../controleurs/questions/c_montrer-contenu-articles.php'); 
+    require('../controleurs/reponses/c_publier-reponse.php');
+    require('../controleurs/reponses/c_montrer-reponses.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'includes/head.php'; ?>
+<?php include '../assets/includes/head.php'; ?>
 <body>
    
     <br><br>
@@ -31,7 +31,7 @@
                     
                     
                     <div class="smBox">
-                    <small><?= '<a href="profile.php?id='.$question_id_author.'">'.$question_pseudo_author . '</a> ' . $question_publication_date; ?></small>
+                    <small><?= '<a href="v_profile.php?id='.$question_id_author.'">'.$question_pseudo_author . '</a> ' . $question_publication_date; ?></small>
                     
                 </div>
                 </section>
@@ -52,7 +52,7 @@
                             <div class="darkBox">
                             <div class="smBox">
                                 <div class="card-header">
-                                    <a href="profile.php?id=<?= $answer['id_auteur']; ?>">
+                                    <a href="v_profile.php?id=<?= $answer['id_auteur']; ?>">
                                         <?= $answer['pseudo_auteur']; ?>
                                     </a>
                                 </div>

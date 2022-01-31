@@ -1,12 +1,12 @@
 <?php 
-    require('actions/users/securityAction.php'); 
-    require('actions/questions/publishQuestionAction.php');
+    require('../controleurs/users/c_security.php'); 
+    require('../controleurs/questions/c_publier-question.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<link href="assets/style.css" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
 
-<?php include 'includes/head.php'; ?>
+<?php include '../assets/includes/head.php'; ?>
 <body>
     
 

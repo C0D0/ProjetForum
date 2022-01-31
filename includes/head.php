@@ -5,7 +5,9 @@
     <!-- CSS only -->
     <link href="assets/style.css" rel="stylesheet">
     <?php include('navbar.php'); ?>
-
+    <a href="#" class="btn">
+        <img src="image/arrow-up-solid.png" class="icone">
+    </a>
     <title>Forum</title>
 </head>
 

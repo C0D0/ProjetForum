@@ -6,9 +6,6 @@
 }
 
 
-body {
-    height: 100vh;
-    background: #373d42;
     font-family: "Roboto", sans-serif;
 }
 
@@ -17,7 +14,7 @@ nav {
     justify-content: space-between;
     padding: 15px 5%;
     align-items: center;
-    background: #8b8b8b;
+
 }
 
 .logo {
@@ -137,7 +134,7 @@ ul li a.active {
 
 
 .darkBox {
-    background: #087bda;
+
     padding: 5% 20% 5% 20%;
   }
   
@@ -176,6 +173,7 @@ ul li a.active {
       color: #AEAFAF;
       opacity: 1;
   }
+
   .bigBox {
     min-height: 150px;
     padding-bottom: 20%;
@@ -241,7 +239,3 @@ bottom: 20px;
 cursor: pointer;
 }
 
-.icone {
-
-width: 50px;    
-}

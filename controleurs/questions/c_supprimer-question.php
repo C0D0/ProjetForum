@@ -3,10 +3,10 @@
 //Vérifier si l'utilisateur est authentifié au niveau du site
 session_start();
 if(!isset($_SESSION['auth'])){
-    header('Location: ../../login.php');
+    header('Location: ../controleurs/users/c_connexion.php');
 }
 
-require('../database.php');
+require('../bdd/database.php');
 
 //Vérifier si l'id est rentré en paramètre dans l'URL
 if(isset($_GET['id']) AND !empty($_GET['id'])){
@@ -29,7 +29,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
             $deleteThisQuestion->execute(array($idOfTheQuestion));
 
             //Rediriger l'utilisateur vers ses questions
-            header('Location: ../../my-questions.php');
+            header('Location: ../../vues/v_mes-questions.php');
 
         }else{
             echo "Vous n'avez pas le droit de supprimer une question qui ne vous appartient pas !";

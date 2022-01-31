@@ -1,7 +1,7 @@
-<?php require('actions/users/signupAction.php'); ?>
+<?php require('../controleurs/users/c_inscription.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'includes/head.php'; ?>
+<?php include '../assets/includes/head.php'; ?>
 <body>
     <br><br>
     <form method="POST">
@@ -22,7 +22,7 @@
             <br>
             
             <br>
-            <a href="login.php" class="bigTitle1"><p>J'ai déjà un compte, je me connecte</p></a>
+            <a href="v_connexion.php" class="bigTitle1"><p>J'ai déjà un compte, je me connecte</p></a>
         </div>
    </form>
 

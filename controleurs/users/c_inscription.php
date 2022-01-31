@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('actions/database.php');
+require('../controleurs/bdd/database.php');
 
 //Validation du formulaire
 if(isset($_POST['validate'])){
@@ -38,7 +38,7 @@ if(isset($_POST['validate'])){
             $_SESSION['pseudo'] = $usersInfos['pseudo'];
 
             //Rediriger l'utilisateur vers la page d'accueil
-            header('Location: index.php');
+            header('Location: ../../auto-forum/vues/v_index.php');
 
         }else{
             $errorMsg = "L'utilisateur existe déjà sur le site";

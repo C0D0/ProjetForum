@@ -1,10 +1,10 @@
 <?php 
-    require('actions/users/securityAction.php');
-    require('actions/questions/myQuestionsAction.php'); 
+    require('../controleurs/users/c_security.php');
+    require('../controleurs/questions/c_mes-questions.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'includes/head.php'; ?>
+<?php include '../assets/includes/head.php'; ?>
 <body>
   
 
@@ -18,7 +18,7 @@
                 <div class="darkBox">
                 <div class="smBox">
                     <h5 class="card-header">
-                        <a href="article.php?id=<?= $question['id']; ?>">
+                        <a href="v_article.php?id=<?= $question['id']; ?>">
                             <?= $question['titre']; ?>
                         </a>
                     </h5>
@@ -28,9 +28,9 @@
                         </p>
                         <br>
                         <br>
-                        <a href="article.php?id=<?= $question['id']; ?>" class="smBox1">Accéder à la question</a>
-                        <a href="edit-question.php?id=<?= $question['id']; ?>" class="smBox1">Modifier la question</a>
-                        <a href="actions/questions/deleteQuestionAction.php?id=<?= $question['id']; ?>" class="smBox1">Supprimer la question</a>
+                        <a href="v_article.php?id=<?= $question['id']; ?>" class="smBox1">Accéder à la question</a>
+                        <a href="v_modif-questions.php?id=<?= $question['id']; ?>" class="smBox1">Modifier la question</a>
+                        <a href="../controleurs/questions/c_supprimer-question.php?id=<?= $question['id']; ?>" class="smBox1">Supprimer la question</a>
                     </div>
                     </div>
                 </div>

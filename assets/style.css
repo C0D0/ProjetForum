@@ -225,3 +225,23 @@ ul li a.active {
     padding: 5% 5% 5% 5%;
   }
   }
+
+.btn {
+
+height: 100px;
+width:100px;
+background-color: crimson;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+right: 20px;
+bottom: 20px;
+cursor: pointer;
+}
+
+.icone {
+
+width: 50px;    
+}

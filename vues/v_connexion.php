@@ -21,7 +21,5 @@
         <a href="v_inscription.php" class="bigTitle1"><p>Je n'ai pas de compte, je m'inscris</p></a>
       
     </form>
-    
-
 </body>
 </html>
